@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Text View</string>
+    <string name="fullName">Mahadi Hassan</string>
+    <string name="mitebot">Technology is a big contribution in our lives. There are many hardware devices which
+        make our life journey easier, make it more easier when it can be remotely controlled from
+        anywhere.
+        Why I decided to build a desktop application which name is “Mit-E Bot Controller”. This
+        is capable to transmit data and received data at a time from device / hardware module via
+        LAN and internet connection. By help of this remote user can able to command device and
+        the monitoring also. This software is so flexible, it can easily connect the module via IP
+        address or database connection.
+        There has two kind of connection method, users must have to connect one among them. If
+        the module or hardware device is connected to a LAN connection, users need an IP
+        address, or if the module or device is connected to the Internet, users have to provide the
+        information of database server. Users must select one of them for connection. Once
+        connected to the device with the remote, users can easily send signals and also receive
+        signals from the device. One of the great advantage of this software is platform
+        independent. This software can run on any operating system example like Windows, Mac,
+        Unix, Linux kernel.
+        Some of the key features of this application are that it is able to stream live video, can
+        provide digital and PWM signal and at a time can read three different kind of sensor value
+        from module. The main interface of the “Mit-E Bot Controller” consists of three parts. On
+        the left side is the transmission part, on the right side is the credentials information part of
+        the device and on the right side is the receiver part.
+        The install process of this software is very simple, users do not need to install any third
+        party. Because I have combined all the necessary file into a single setup file. Hopefully, it will
+        give a good experience.</string>
+
+</resources>
