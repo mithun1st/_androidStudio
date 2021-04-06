@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ae6bd0f-40ed-4abc-9b54-715403ea914b" name="Default Changelist" comment="" />
+    <list default="true" id="1ae6bd0f-40ed-4abc-9b54-715403ea914b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/TextView/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextView/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TextView/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextView/app/src/main/java/com/example/textview/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/TextView/app/src/main/java/com/example/textview/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextView/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TextView/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextView/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TextView/app/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1qfRH79K0mSQTz7innhHDVe2NoX" />
   <component name="ProjectViewState">
