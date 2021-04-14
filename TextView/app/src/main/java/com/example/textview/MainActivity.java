@@ -23,7 +23,5 @@ public class MainActivity extends AppCompatActivity {
         var2.setText("mh Mithun");
 
 
-
-
     }
 }

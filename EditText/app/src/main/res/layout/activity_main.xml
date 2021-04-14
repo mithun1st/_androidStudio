@@ -14,7 +14,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:backgroundTint="#02024A"
+        android:backgroundTint="@color/black"
         android:hint="Enter String"
         android:inputType="text"
         android:cursorVisible="true"

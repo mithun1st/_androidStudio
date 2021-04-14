@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.tv1:
-                etv1.setText("");
+                etv1.setText("123");
                 etv2.setText("");
                 etv3.setText("");
                 break;
