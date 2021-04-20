@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
         bv2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                //View tv=getLayoutInflater().inflate(R.layout.toast_layout,findViewById(R.id.tl));
                 LayoutInflater lf = getLayoutInflater();
                 View tv = lf.inflate(R.layout.toast_layout,findViewById(R.id.tl));
 
