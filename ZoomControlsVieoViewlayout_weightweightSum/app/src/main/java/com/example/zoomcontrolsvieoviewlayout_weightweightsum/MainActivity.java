@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebViewClient;
 import android.widget.ImageView;
 import android.widget.MediaController;
+import android.widget.Toast;
 import android.widget.VideoView;
 import android.widget.ZoomControls;
 
@@ -52,8 +54,8 @@ public class MainActivity extends AppCompatActivity {
         Uri uri= Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.rubiks);
         vv.setVideoURI(uri);
         vv.start();
+
         MediaController mc=new MediaController(this);
         vv.setMediaController(mc);
-
     }
 }
