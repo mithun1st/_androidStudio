@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ArrayAdapter ListView</string>
+
+    <string-array name="program">
+        <item>JavaScript</item>
+        <item>Python</item>
+        <item>HTML</item>
+        <item>CSS</item>
+        <item>C++</item>
+        <item>PHP</item>
+        <item>Rust</item>
+        <item>Swift</item>
+        <item>Java </item>
+        <item>Kotlin</item>
+        <item>C#</item>
+        <item>MATLAB</item>
+        <item>SQL</item>
+        <item>Golang</item>
+        <item>Ruby</item>
+    </string-array>
+
+</resources>
