@@ -3,9 +3,12 @@ package com.example.basicadapterlistviewcustomadpater;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,7 +30,14 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.manjaro, R.drawable.arch, R.drawable.kali, R.drawable.popos, R.drawable.elementary};
         String[] linux= getResources().getStringArray(R.array.linux);
 
-        CustomAdapter1 customBaseAdapter = new CustomAdapter1(this, linux, logo);
+        CustomAdapter1 customBaseAdapter = new CustomAdapter1(MainActivity.this, linux, logo);
         lv.setAdapter(customBaseAdapter);
+
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(MainActivity.this, linux[position],Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

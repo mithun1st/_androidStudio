@@ -38,19 +38,17 @@ public class CustomAdapter1 extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        if(convertView==null){
-            LayoutInflater li = (LayoutInflater) cc.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = li.inflate(R.layout.costom_adapter,parent,false);
-        }
+        LayoutInflater li= LayoutInflater.from(cc);
+        View v= li.inflate(R.layout.costom_adapter,parent,false);
 
-        TextView tv= convertView.findViewById(R.id.tv);
-        TextView tv1= convertView.findViewById(R.id.tv1);
-        ImageView iv= convertView.findViewById(R.id.iv);
+        TextView tv= v.findViewById(R.id.tv);
+        TextView tv1= v.findViewById(R.id.tv1);
+        ImageView iv= v.findViewById(R.id.iv);
 
         iv.setImageResource(ii[position]);
         tv.setText(ss[position]);
         tv1.setText("Click here for details about "+ ss[position]);
 
-        return convertView;
+        return v;
     }
 }
