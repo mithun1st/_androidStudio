@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Spinner ArrayAdapter BaseAdapter Progressbar fullscreen</string>
+    <!-- Strings used for fragments for navigation -->
+    <string-array name="language">
+    <item>Python</item>
+    <item>JavaScript</item>
+    <item>HTML</item>
+    <item>CSS</item>
+    <item>C++</item>
+    <item>PHP</item>
+    <item>Rust</item>
+    <item>Swift</item>
+    <item>Java </item>
+    <item>Kotlin</item>
+    <item>C#</item>
+    <item>MATLAB</item>
+    <item>SQL</item>
+    <item>Golang</item>
+    <item>Ruby</item>
+</string-array>
+
+
+    <string-array name="linux">
+        <item>Mint</item>
+        <item>Ubuntu</item>
+        <item>OpenSUSE</item>
+        <item>Fedora</item>
+        <item>Debian</item>
+        <item>Manjaro</item>
+        <item>Arch</item>
+        <item>Kali</item>
+        <item>Pop!_OS</item>
+        <item>Elementary</item>
+    </string-array>
+</resources>
