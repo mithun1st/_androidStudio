@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mSearch"
+        android:title="Search"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/mShare"
+        android:title="Share"
+        android:icon="@drawable/ic_baseline_share_24"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/mFeedback"
+        android:title="Feedback"
+        android:icon="@drawable/ic_baseline_feedback_24"
+        app:showAsAction="never"
+        />
+
+</menu>
