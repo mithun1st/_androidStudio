@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">ExpandableListView</string>
+
+    <string-array name="header">
+        <item>AI</item>
+        <item>ALGOL</item>
+        <item>ALU</item>
+        <item>ASCII</item>
+        <item>BIOS</item>
+        <item>CD</item>
+        <item>CL</item>
+        <item>CLI</item>
+        <item>CPU</item>
+        <item>DBMS</item>
+        <item>DNA</item>
+        <item>DPI</item>
+        <item>DVD</item>
+        <item>EPROM</item>
+        <item>FM</item>
+        <item>GB</item>
+        <item>GNU</item>
+        <item>GPRS</item>
+        <item>GSM</item>
+        <item>GUI</item>
+        <item>HTML</item>
+        <item>HTTP</item>
+        <item>IBM</item>
+        <item>IC</item>
+        <item>IP</item>
+        <item>JPEG</item>
+        <item>JRE</item>
+        <item>KB</item>
+        <item>LAN</item>
+        <item>LCD</item>
+        <item>LED</item>
+        <item>MB</item>
+        <item>MHz</item>
+        <item>MPEG</item>
+        <item>MS-DOS</item>
+        <item>OCR</item>
+        <item>OMR</item>
+        <item>OS</item>
+        <item>PC</item>
+        <item>PDF</item>
+        <item>RAM</item>
+        <item>ROM</item>
+        <item>SDLC</item>
+        <item>SQL</item>
+        <item>SRAM</item>
+        <item>TB</item>
+        <item>TCP</item>
+        <item>URL</item>
+        <item>USB</item>
+        <item>VGA</item>
+        <item>WAN</item>
+        <item>WLAN</item>
+        <item>WWW</item>
+    </string-array>
+
+    <string-array name="child">
+        <item>Artificial Intelligence</item>
+        <item>Algorithic Language</item>
+        <item>Arithmetic Logic Unit</item>
+        <item>American Standard Code for Information Interchange</item>
+        <item>Basic Inpute Output System</item>
+        <item>Compact Disk</item>
+        <item>Command Language</item>
+        <item>Command Line Interface</item>
+        <item>Central Processing Unit</item>
+        <item>Data Base Management System</item>
+        <item>Digital Network Architecture</item>
+        <item>Dots Per Inch</item>
+        <item>Digital Video/Versatile Disk</item>
+        <item>Erasable Programmable Read-Only Memory</item>
+        <item>Frequency Modulation</item>
+        <item>Giga Bytes</item>
+        <item>Gnu Not Unix</item>
+        <item>General Packet Radio Service</item>
+        <item>Global System for Mobile communication</item>
+        <item>Graphical User Interface</item>
+        <item>HyperText Markup Language</item>
+        <item>HyperText Transport Protocol</item>
+        <item>International Business Machine</item>
+        <item>Integrated Circuit</item>
+        <item>Internet Protocol</item>
+        <item>Joint Photographic Experts Group</item>
+        <item>Java Runtime Engine</item>
+        <item>Kilo Bytes</item>
+        <item>Local Area Network</item>
+        <item>Liquid Crystal Display</item>
+        <item>Light Emitting Diode</item>
+        <item>Mega Bytes</item>
+        <item>Mega Hertz</item>
+        <item>Moving Pictures Experts Group</item>
+        <item>MicroSoft Disk Operating System</item>
+        <item>Optical Character Recognition</item>
+        <item>Optical Mark Reader</item>
+        <item>Operating System</item>
+        <item>Personal Computer</item>
+        <item>Portable Document Format</item>
+        <item>Random Access Memory</item>
+        <item>Read Only Memory</item>
+        <item>Software Development Life Cycle</item>
+        <item>Structured Query Language</item>
+        <item>Static RAM</item>
+        <item>Tera Bytes</item>
+        <item>Transport Control Protocol</item>
+        <item>Uniform Resource Locator</item>
+        <item>Universal Serial Bus</item>
+        <item>Video Graphics Array</item>
+        <item>Wide Area Network</item>
+        <item>Wireless Local Area Network</item>
+        <item>World Wide Web</item>
+    </string-array>
+
+</resources>

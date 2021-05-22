@@ -12,7 +12,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
-import android.widget.SearchView;
 import android.widget.Toast;
 import android.widget.Button;
 
@@ -75,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
                 ifb.putExtra(Intent.EXTRA_EMAIL,new String[]{"mithun.2121@yahoo.com","m2n1st@gmail.com"});
 
                 startActivity(Intent.createChooser(ifb,"feedback Now"));
-
             }
         });
 
