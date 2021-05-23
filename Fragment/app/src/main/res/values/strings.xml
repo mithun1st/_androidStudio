@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Fragment</string>
+
+    <string-array name="linux">
+        <item>Arch</item>
+        <item>Fedora</item>
+        <item>Kali</item>
+        <item>Ubuntu</item>
+        <item>Debian</item>
+        <item>Elementary</item>
+        <item>Manjaro</item>
+        <item>Mint</item>
+    </string-array>
+
+    <string name="arch"> Arch Linux is a Linux distribution for computers with x86-64 processors. Arch Linux adheres to the KISS principle ("Keep It Simple, Stupid") and is focused on simplicity, modernity, pragmatism, user centrality, and versatility.</string>
+    <string name="fedora">Fedora is a Linux distribution developed by the community-supported Fedora Project which is sponsored primarily by Red Hat, a subsidiary of IBM, with additional support from other companies.</string>
+    <string name="kali">Kali Linux is a Debian-derived Linux distribution designed for digital forensics and penetration testing. It is maintained and funded by Offensive Security.</string>
+    <string name="ubuntu">Ubuntu is a Linux distribution based on Debian and composed mostly of free and open-source software. Ubuntu is officially released in three editions: Desktop, Server, and Core for Internet of things devices and robots.</string>
+    <string name="debian">Debian , also known as Debian GNU/Linux, is a Linux distribution composed of free and open-source software, developed by the community-supported Debian Project, which was established by Ian Murdock on August 16, 1993.</string>
+    <string name="ele">Elementary OS is a Linux distribution based on Ubuntu LTS. It promotes itself as a "fast, open, and privacy-respecting" replacement to macOS and Windows and has a pay-what-you-want model.</string>
+    <string name="manjaro">Manjaro is a free and open-source Linux distribution based on the Arch Linux operating system. Manjaro has a focus on user-friendliness and accessibility, and the system itself is designed to work fully with its variety of pre-installed software.</string>
+    <string name="mint">Linux Mint is a community-driven Linux distribution based on Ubuntu (in turn based on Debian), bundled with a variety of free and open-source applications.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
