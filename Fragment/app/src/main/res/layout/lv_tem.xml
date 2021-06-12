@@ -11,6 +11,8 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="28sp"
-        android:text="Default"/>
+        android:text="Default"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"/>
 
 </LinearLayout>

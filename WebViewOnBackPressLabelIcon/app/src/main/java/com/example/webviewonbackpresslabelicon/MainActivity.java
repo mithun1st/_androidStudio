@@ -3,12 +3,8 @@ package com.example.webviewonbackpresslabelicon;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
