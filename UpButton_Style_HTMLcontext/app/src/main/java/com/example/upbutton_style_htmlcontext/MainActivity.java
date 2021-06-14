@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         String body="<h2> Headline 2 </h2> \n"+
                 "<h4> Headline 4 </h4> \n"+
                 "<h6> Headline 6 </h6> \n"+
+                "<p> <small>small text</small>, <big>big text</big> </p>"+
                 "<p> <b>bold</b>, <i>italic</i> </p>"+
                 "<p> <del>correct</del>, <u>UnderLine</u> </p>"+
                 "<p> (a+b)<sup>3</sup>, H<sub>2</sub>O </p>";

@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         wv=findViewById(R.id.wv);
 
         wv.getSettings().setJavaScriptEnabled(true);
-        //WebSettings ws=wv.getSettings();
-        //ws.setJavaScriptEnabled(true);
+//WebSettings ws=wv.getSettings();
+//ws.setJavaScriptEnabled(true);
 
         wv.setWebViewClient(new WebViewClient());
 
