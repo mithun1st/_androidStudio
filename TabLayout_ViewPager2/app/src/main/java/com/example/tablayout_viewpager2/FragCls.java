@@ -10,11 +10,10 @@ import org.jetbrains.annotations.NotNull;
 
 public class FragCls extends FragmentStateAdapter{
 
-    public FragCls(@NonNull @NotNull FragmentManager fragmentManager, @NonNull @NotNull Lifecycle lifecycle) {
-        super(fragmentManager, lifecycle);
+    public FragCls(FragmentManager fm,Lifecycle lc) {
+        super(fm, lc);
     }
 
-    @NonNull
     @Override
     public Fragment createFragment(int position) {
         Fragment f = null;

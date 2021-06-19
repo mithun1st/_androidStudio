@@ -7,11 +7,17 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+
     <com.google.android.material.tabs.TabLayout
-    android:id="@+id/tl"
-    android:layout_width="match_parent"
-    android:layout_height="70dp"
-    android:background="@color/teal_200"/>
+        android:id="@+id/tl"
+
+        app:tabTextAppearance="@style/tabText"
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:tabSelectedTextColor="#9C00C6"
+        app:tabTextColor="#454544"
+        android:background="#B9FBFB"/>
 
 
     <androidx.viewpager2.widget.ViewPager2

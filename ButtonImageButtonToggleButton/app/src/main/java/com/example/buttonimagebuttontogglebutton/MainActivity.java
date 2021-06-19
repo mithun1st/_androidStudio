@@ -14,10 +14,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     //declare variable
-    Button bv1,bv3;
+    Button bv1,bv3,bv4;
     ImageButton bv2;
     TextView tv1;
     ToggleButton tb;
@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bv2=findViewById(R.id.b2);
         bv3=findViewById(R.id.b3);
         tb=findViewById(R.id.tb);
+        bv4=findViewById(R.id.b4);
 
         //toggleButton
         tb.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -59,6 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //button1- class listener "implements+onClick()" (1/2);
         bv1.setOnClickListener(this);
+        bv4.setOnClickListener(this);
     }
 
     //button1- class listener "implements+onClick()" (2/2);
@@ -74,6 +76,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(v.getId()==R.id.b3) {
             tv1.setText("Call From XML");
             Toast.makeText(this, "android:onClick=\"fnc\"", Toast.LENGTH_SHORT).show();
+        }
+        if(v.getId()==R.id.b4){
+            Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show();
         }
     }
 

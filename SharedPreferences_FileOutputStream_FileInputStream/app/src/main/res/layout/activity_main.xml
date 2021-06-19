@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="SharedPreferences"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:inputType="text"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:id="@+id/et1"
+        android:background="@color/purple_200"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Input String"/>
+
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:id="@+id/et2"
+        android:background="@color/purple_200"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Input Integer"/>
+
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:inputType="numberDecimal"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:id="@+id/et3"
+        android:background="@color/purple_200"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Input Double"/>
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="save"
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:text="Load"
+            android:id="@+id/b2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/black"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="FileOutputStream FileInputStream"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:gravity="start"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:inputType="text"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:id="@+id/et"
+        android:background="#D5FFEA"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:hint="typing here . . ."/>
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="save"
+            android:id="@+id/b3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:text="Load"
+            android:id="@+id/b4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+

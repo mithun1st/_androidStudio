@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
         tl.addTab(tl.newTab().setText("Three"));
 
 
-
         //initial fragment adapter
         FragmentManager fm=getSupportFragmentManager();
         FragCls obj = new FragCls(fm,getLifecycle());
