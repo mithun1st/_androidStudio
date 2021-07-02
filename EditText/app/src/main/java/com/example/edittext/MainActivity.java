@@ -3,10 +3,13 @@ package com.example.edittext;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -32,6 +35,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         etv3.setOnClickListener(this);
     }
 
+
+    /*
+    random num between 5 to 7
+    x= (max-min)+1;
+    y=max;
+    num=new Random.nextInt(x)+y;
+     */
+
+    public void randomNum(){
+        Random r=new Random();
+        int num= r.nextInt(3)+5;
+        tv.setText(String.valueOf(num));
+    }
+
     @Override
     public void onClick(View v) {
         switch (v.getId()){
@@ -39,10 +56,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 etv1.setText("123");
                 etv2.setText("");
                 etv3.setText("");
+                randomNum();
                 break;
 
             case R.id.b1:
-                tv.setText(etv1.getText()+etv2.getText().toString()+ etv3.getText());
+                if(etv1.getText().toString().isEmpty()){
+                    etv1.setError("Field is empty");
+                    etv1.requestFocus();
+                }
+                else {
+                    tv.setText(etv1.getText()+etv2.getText().toString()+ etv3.getText());
+                }
+
                 break;
 
         }

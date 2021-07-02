@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ImplicitIntent_AutoLink</string>
+
+    <string name="text1">
+        Phone: +8801751001003 \n
+        Email: mithun.2121@yahoo.com \n
+        Website: mithun1st.blogspot.com \n
+    </string>
+
+</resources>

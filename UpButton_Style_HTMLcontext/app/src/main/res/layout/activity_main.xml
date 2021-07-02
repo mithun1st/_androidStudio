@@ -24,6 +24,28 @@
         <TextView
             style="@style/style2"
             android:text="Example 2"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background1"
+            android:text="Button Background"/>
+
+        <EditText
+            android:background="@drawable/background2"
+            android:gravity="center"
+
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="type here"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/background3"
+            android:text="Go"/>
+
     </LinearLayout>
 
 
