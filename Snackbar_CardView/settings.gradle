@@ -1,0 +1,2 @@
+rootProject.name = "Snackbar_CardView"
+include ':app'
