@@ -1,10 +1,14 @@
 package com.example.tablayout_viewpager2;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -14,7 +18,7 @@ import com.google.android.material.tabs.TabLayout;
 public class MainActivity extends AppCompatActivity {
 
     private TabLayout tl;
-    private ViewPager2 vp;
+    private ViewPager vp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         tl=findViewById(R.id.tl);
         vp=findViewById(R.id.vp);
 
+
         //tab create
         tl.addTab(tl.newTab().setText("One"));
         tl.addTab(tl.newTab().setText("Two"));
@@ -31,9 +36,9 @@ public class MainActivity extends AppCompatActivity {
 
 
         //initial fragment adapter
-        FragmentManager fm=getSupportFragmentManager();
-        FragCls obj = new FragCls(fm,getLifecycle());
+        FragCls obj = new FragCls(getSupportFragmentManager());
         vp.setAdapter(obj);
+
 
 
         //initial tab click listener
@@ -46,20 +51,28 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
-
             }
 
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
-
             }
         });
 
+
         //view Pager Listener
-        vp.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+        vp.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+            }
+
             @Override
             public void onPageSelected(int position) {
                 tl.selectTab(tl.getTabAt(position));
+                System.out.println("--------"+vp.getCurrentItem());
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
             }
         });
 

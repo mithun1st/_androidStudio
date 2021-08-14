@@ -10,8 +10,12 @@
         android:id="@+id/elv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:listSelector="#06F8A1"
+
         android:divider="#D1D0CD"
-        android:dividerHeight="5dp"/>
+        android:dividerHeight="5dp"
+
+        android:childDivider="#01777A"/>
 
 
 </LinearLayout>

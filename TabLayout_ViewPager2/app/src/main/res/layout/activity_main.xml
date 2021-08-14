@@ -14,13 +14,17 @@
         app:tabTextAppearance="@style/tabText"
 
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        app:tabSelectedTextColor="#9C00C6"
-        app:tabTextColor="#454544"
-        android:background="#B9FBFB"/>
+        android:layout_height="wrap_content"
+
+        app:tabIndicatorGravity="stretch"
+
+        app:tabIndicatorColor="#075AFF"
+        app:tabSelectedTextColor="#FF9800"
+        app:tabTextColor="#005E50"
+        android:backgroundTint="#8E8D8D"/>
 
 
-    <androidx.viewpager2.widget.ViewPager2
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/vp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

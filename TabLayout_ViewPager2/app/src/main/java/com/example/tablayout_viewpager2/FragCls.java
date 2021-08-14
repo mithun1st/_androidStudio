@@ -3,38 +3,30 @@ package com.example.tablayout_viewpager2;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import org.jetbrains.annotations.NotNull;
 
-public class FragCls extends FragmentStateAdapter{
+public class FragCls extends FragmentPagerAdapter {
 
-    public FragCls(FragmentManager fm,Lifecycle lc) {
-        super(fm, lc);
+    Fragment[] f = new Fragment[]{new frag1(), new frag2(), new frag3()};
+
+    public FragCls(FragmentManager fm) {
+        super(fm);
+    }
+
+    @NonNull
+    @Override
+    public Fragment getItem(int position) {
+
+        return f[position];
+
     }
 
     @Override
-    public Fragment createFragment(int position) {
-        Fragment f = null;
-
-        switch (position){
-            case 0:
-                f=new frag1();
-                break;
-            case 1:
-                f=new frag2();
-                break;
-            case 2:
-                f=new frag3();
-                break;
-        }
-
-        return f;
-    }
-
-    @Override
-    public int getItemCount() {
-        return 3;
+    public int getCount() {
+        return f.length;
     }
 }

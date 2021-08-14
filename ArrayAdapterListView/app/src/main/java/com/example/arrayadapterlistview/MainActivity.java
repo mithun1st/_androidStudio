@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
         String[] pl=getResources().getStringArray(R.array.program);
 
-        ArrayAdapter<String> aad=new ArrayAdapter<String>(MainActivity.this,R.layout.list_view,R.id.tv,pl);
-        lv.setAdapter(aad);
+        ArrayAdapter<String> ad=new ArrayAdapter<String>(MainActivity.this,R.layout.list_view,R.id.tv,pl);
+        lv.setAdapter(ad);
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -36,4 +36,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 }

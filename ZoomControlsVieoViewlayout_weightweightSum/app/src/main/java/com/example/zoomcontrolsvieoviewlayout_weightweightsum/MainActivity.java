@@ -2,6 +2,7 @@ package com.example.zoomcontrolsvieoviewlayout_weightweightsum;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -55,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         vv.setVideoURI(uri);
         vv.start();
 
+        //video controller
         MediaController mc=new MediaController(this);
         vv.setMediaController(mc);
     }

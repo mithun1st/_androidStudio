@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                     tv.setVisibility(View.VISIBLE);
                 }
                 else {
-                    tv.setVisibility(View.GONE);
+                    tv.setVisibility(View.INVISIBLE);
                 }
             }
         });

@@ -16,7 +16,7 @@ public class MyGrid extends BaseAdapter {
     int[] logo;
 
     //constructor
-    MyGrid(Context c, String[] li, int[] lo){
+    public MyGrid(Context c, String[] li, int[] lo){
         this.act=c;
         this.linux=li;
         this.logo=lo;

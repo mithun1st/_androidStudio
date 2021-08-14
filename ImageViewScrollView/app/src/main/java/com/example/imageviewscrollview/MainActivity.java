@@ -26,12 +26,11 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        iv1.setOnClickListener(new View.OnClickListener() {
+        iv1.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
-            public void onClick(View v) {
-                System.out.println("1st Picture");
-
+            public boolean onLongClick(View v) {
                 Toast.makeText(MainActivity.this,"1st picture",Toast.LENGTH_SHORT).show();
+                return false;
             }
         });
 
@@ -47,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 System.out.println("3rd Picture");
+                iv2.setImageResource(R.drawable.i3);
             }
         });
     }

@@ -52,7 +52,7 @@ public class WelcomeActivity extends AppCompatActivity {
         int i=0;
         while(i<=100){
             try {
-                Thread.sleep((500-(5*i)));
+                Thread.sleep(500-(5*i));
                 pb.setProgress(i);
             }catch (Exception e){
 

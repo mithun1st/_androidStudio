@@ -17,9 +17,9 @@ public class CustomAdapter1 extends BaseExpandableListAdapter {
     HashMap<Integer,ArrayList<String>> hm;
 
     CustomAdapter1(Context c, ArrayList<String> a, HashMap<Integer,ArrayList<String>> h){
-        cc=c;
-        al=a;
-        hm=h;
+        this.cc=c;
+        this.al=a;
+        this.hm=h;
     }
     
     

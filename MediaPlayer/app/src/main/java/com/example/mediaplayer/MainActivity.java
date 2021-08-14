@@ -59,6 +59,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.beating_heart),
                 Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.rington)};
 
+
+
     }
 
     @Override

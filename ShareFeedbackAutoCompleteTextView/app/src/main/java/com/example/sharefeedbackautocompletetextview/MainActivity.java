@@ -15,6 +15,9 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Toast;
 import android.widget.Button;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button share,feedback;
@@ -32,10 +35,12 @@ public class MainActivity extends AppCompatActivity {
 
         String su="Mahadi Hassan";
         String te="having fun with android studio";
-        String[] linux=getResources().getStringArray(R.array.linux);
+
+        String[] s= getResources().getStringArray(R.array.linux);
+        ArrayList <String> linux=new ArrayList<>(Arrays.asList(s)) ;
 
         //auto complete text view
-        ArrayAdapter<String> ad=new ArrayAdapter<>(MainActivity.this,R.layout.auto_complete_text_view,R.id.tv,linux);
+        ArrayAdapter<String> ad=new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_list_item_1,linux);
         actv.setThreshold(1);
         actv.setAdapter(ad);
 
@@ -65,13 +70,15 @@ public class MainActivity extends AppCompatActivity {
         feedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String[] mailStr = new String[] {"mithun.2121@yahoo.com","m2n1st@gmail.com"};
+
                 Intent ifb=new Intent(Intent.ACTION_SEND);
                 ifb.setType("text/email");
 
                 ifb.putExtra(Intent.EXTRA_SUBJECT,su);
                 ifb.putExtra(Intent.EXTRA_TEXT,te);
 
-                ifb.putExtra(Intent.EXTRA_EMAIL,new String[]{"mithun.2121@yahoo.com","m2n1st@gmail.com"});
+                ifb.putExtra(Intent.EXTRA_EMAIL,mailStr);
 
                 startActivity(Intent.createChooser(ifb,"feedback Now"));
             }

@@ -9,6 +9,7 @@ import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -37,6 +38,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //set Listener
         bv1.setOnClickListener(MainActivity.this);
+
+        //radio group
+        rgv1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                Toast.makeText(MainActivity.this, String.valueOf(checkedId) , Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override

@@ -10,7 +10,6 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv"
-        android:background="@color/purple_200"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:cardCornerRadius="20dp"
@@ -39,7 +38,7 @@
 
 
     <TextView
-        android:visibility="visible"
+        android:visibility="invisible"
 
         android:id="@+id/tv"
         android:layout_width="match_parent"

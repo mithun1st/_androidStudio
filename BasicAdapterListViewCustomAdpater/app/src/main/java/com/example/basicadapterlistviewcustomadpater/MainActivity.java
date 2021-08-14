@@ -3,6 +3,7 @@ package com.example.basicadapterlistviewcustomadpater;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageView;
@@ -32,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
         CustomAdapter1 customBaseAdapter = new CustomAdapter1(MainActivity.this, linux, logo);
         lv.setAdapter(customBaseAdapter);
+
+        System.out.println(customBaseAdapter.getCount());
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

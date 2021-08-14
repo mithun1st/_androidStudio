@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.text.Editable;
+import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -33,6 +34,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         etv1.setOnClickListener(this);
         etv2.setOnClickListener(this);
         etv3.setOnClickListener(this);
+
+        etv1.setInputType(InputType.TYPE_NUMBER_FLAG_DECIMAL);
     }
 
 
@@ -67,7 +70,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 else {
                     tv.setText(etv1.getText()+etv2.getText().toString()+ etv3.getText());
                 }
-
                 break;
 
         }

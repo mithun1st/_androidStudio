@@ -90,6 +90,12 @@ public class MainActivity extends AppCompatActivity {
             ArrayList<String> a=new ArrayList<String>(0);
             a.add(child[i]);
 
+            //optional
+            if(i==0 || i==1 || i==2){
+                a.add("Example 1");
+                a.add("Example 2");
+            }
+
             hm.put(i,a);
         }
 

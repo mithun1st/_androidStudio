@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextClock tc;
     private TextView tv;
     private Button b;
-    private Typeface tf;
 
     private AlertDialog.Builder adb;
     private AlertDialog ad;
@@ -33,6 +32,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tc=findViewById(R.id.tc);
         tv=findViewById(R.id.tv4);
         b=findViewById(R.id.b);
+
+
+
 
         //AnalogClock
         ac.setOnClickListener(new View.OnClickListener() {
@@ -49,10 +51,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(MainActivity.this,"Text Clock",Toast.LENGTH_SHORT).show();
             }
         });
-
-        //Typeface
-        tf= Typeface.createFromAsset(getAssets(),"font/KaushanScript.otf");
-        tv.setTypeface(tf);
 
         b.setOnClickListener(MainActivity.this);
     }

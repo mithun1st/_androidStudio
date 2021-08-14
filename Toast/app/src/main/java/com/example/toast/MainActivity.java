@@ -7,6 +7,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,12 +33,15 @@ public class MainActivity extends AppCompatActivity {
 
                 //View tv=getLayoutInflater().inflate(R.layout.toast_layout,findViewById(R.id.tl));
                 LayoutInflater lf = getLayoutInflater();
-                View tv = lf.inflate(R.layout.toast_layout,findViewById(R.id.tl));
+                View vv = lf.inflate(R.layout.toast_layout,findViewById(R.id.tl));
+
+                TextView tv=vv.findViewById(R.id.tv);
+                tv.setText("MH Mithun");
 
                 Toast t=new Toast(MainActivity.this);
                 t.setDuration(Toast.LENGTH_LONG);
                 t.setGravity(Gravity.CENTER,0,-150);
-                t.setView(tv);
+                t.setView(vv);
 
                 t.show();
             }
